@@ -31,12 +31,16 @@ function calculateLossPercentage(loss, costPrice) {
 }
 
 function clickHandler() {
-    var resultList = calculateSellingPriceAndCostPrice(Number(quantityOfStocks.value));
-
-    if(resultList[0] === "profit") {
-        outputBox.innerText = "Yay!! Your Profit is " + Number(resultList[1]) + " and Profit Percentage is " + Number(resultList[2]) + "%";
+    if(initialPrice == '' || quantityOfStocks.value == '' || currentPrice == '') {
+        outputBox.innerHTML = "Please fill all the details."
     } else {
-        outputBox.innerText = "Whoops!! Your Loss is " + resultList[1] + " and Loss Percentage is " + resultList[2] + "%";
+        var resultList = calculateSellingPriceAndCostPrice(Number(quantityOfStocks.value));
+
+        if(resultList[0] === "profit") {
+            outputBox.innerText = "Yay!! Your Profit is " + Number(resultList[1]) + " and Profit Percentage is " + Number(resultList[2]) + "%";
+        } else {
+            outputBox.innerText = "Whoops!! Your Loss is " + resultList[1] + " and Loss Percentage is " + resultList[2] + "%";
+        }
     }
 }
 
