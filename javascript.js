@@ -37,8 +37,10 @@ function clickHandler() {
         var resultList = calculateSellingPriceAndCostPrice(Number(quantityOfStocks.value));
 
         if(resultList[0] === "profit") {
+           outputBox.style.color = "green"; 
             outputBox.innerText = "Yay!! Your Profit is " + Number(resultList[1]) + " and Profit Percentage is " + Number(resultList[2]) + "%";
         } else {
+            outputBox.style.color = "red";
             outputBox.innerText = "Whoops!! Your Loss is " + resultList[1] + " and Loss Percentage is " + resultList[2] + "%";
         }
     }
