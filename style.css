@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -60,7 +63,7 @@ button {
     text-align: center;
 }
 
-.rightside p {
-    font-size: x-large;
-    margin-top: 50vh;
+.rightside h2 {
+    font-size: 50px;
+    margin-top: 40vh;    
 }
