@@ -38,10 +38,10 @@ function clickHandler() {
 
         if(resultList[0] === "profit") {
            outputBox.style.color = "green"; 
-            outputBox.innerText = "Yay!! Your Profit is " + Number(resultList[1]) + " and Profit Percentage is " + Number(resultList[2]) + "%";
+            outputBox.innerText = "Yay!! Your Profit is " + resultList[1].toFixed(2) + " and Profit Percentage is " + resultList[2].toFixed(2) + "%";
         } else {
             outputBox.style.color = "red";
-            outputBox.innerText = "Whoops!! Your Loss is " + resultList[1] + " and Loss Percentage is " + resultList[2] + "%";
+            outputBox.innerText = "Whoops!! Your Loss is " + resultList[1].toFixed(2) + " and Loss Percentage is " + resultList[2].toFixed(2) + "%";
         }
     }
 }

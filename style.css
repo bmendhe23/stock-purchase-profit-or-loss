@@ -19,12 +19,13 @@ h1 {
 
 input {
     padding: 10px;
-    margin: 20px;
+    margin: 20px auto;
     font-size: large;
     height: 50px;
     background-color: var(--black-shade2);
     border-color: var(--black-shade2);
     border-radius: 5px;
+    width: 60%;
 }
 
 input:focus {
@@ -33,10 +34,11 @@ input:focus {
 
 button {
     padding: 10px;
-    margin: 20px;
+    margin: 20px auto;
     font-size: large;
     height: 50px;
     background-color: var(--blue-shade);
+    width: 60%;
 }
 
 .leftside {
